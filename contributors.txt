@@ -1,1 +1,2 @@
-Jevin
+Contributors:
+Jevin (https://github.com/JevinMenezes) [Tech enthusiast with keen interests in Google's Android platform]
