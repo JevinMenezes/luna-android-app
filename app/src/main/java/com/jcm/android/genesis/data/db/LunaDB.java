@@ -4,6 +4,7 @@ import android.arch.persistence.room.Database;
 import android.arch.persistence.room.RoomDatabase;
 
 import com.jcm.android.genesis.login.Login;
+import com.jcm.android.genesis.login.LoginDao;
 
 /**
  * Created by Jevin on 02/03/2018.
@@ -11,4 +12,5 @@ import com.jcm.android.genesis.login.Login;
 
 @Database(entities={Login.class}, version=1, exportSchema = true)
 public abstract class LunaDB extends RoomDatabase {
+    public abstract LoginDao loginDao();
 }

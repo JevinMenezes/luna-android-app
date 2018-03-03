@@ -24,6 +24,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 //def BUTTER_KNIFE_VERSION="8.5.1"
@@ -34,23 +38,33 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //noinspection GradleCompatible
-    implementation "com.android.support:appcompat-v7:26.1.0"
-    implementation "com.android.support:design:26.1.0"
-
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
     testImplementation 'junit:junit:4.12'
-
     // ButterKnife
-    implementation "com.jakewharton:butterknife:8.5.1"
+    implementation 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor "com.jakewharton:butterknife-compiler:8.5.1"
-
     // ViewModel and LiveData
-    implementation "android.arch.lifecycle:extensions:1.1.0"
+    implementation 'android.arch.lifecycle:extensions:1.1.0'
     annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
-
     // Room (use 1.1.0-alpha1 for latest alpha)
-    implementation "android.arch.persistence.room:runtime:1.0.0"
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
     annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
-
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    annotationProcessor "com.squareup.retrofit2:retrofit:2.3.0"
     // MongoDB
-    implementation 'org.mongodb:mongo-java-driver:2.12.3'
+    implementation 'org.mongodb:mongo-java-driver:3.6.3'
+    // Dagger
+    compile "com.google.dagger:dagger:2.14.1"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.14.1"
+    //Google Sheets API
+    /*compile 'com.google.android.gms:play-services-auth:11.8.0'
+            compile 'pub.devrel:easypermissions:0.3.0'
+            compile('com.google.api-client:google-api-client-android:1.23.0') {
+                exclude group: 'org.apache.httpcomponents'
+            }
+            compile('com.google.apis:google-api-services-sheets:v4-rev506-1.23.0') {
+                exclude group: 'org.apache.httpcomponents'
+            }*/
 }

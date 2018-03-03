@@ -1,7 +1,7 @@
 package com.jcm.android.genesis.login;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.EditText;
 
@@ -15,7 +15,7 @@ import butterknife.OnClick;
  * Created by Jevin on 01/25/2018.
  */
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Activity {
     private static final String LOG_TAG = "LoginActivity";
 
     @BindView(R.id.input_email) EditText _emailText;
@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(LOG_TAG,"onCreate(Bundle savedInstanceState) :method started");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_new);
         ButterKnife.bind(this);
         Log.d(LOG_TAG, "onCreate(Bundle savedInstanceState) :method ended");
     }

@@ -7,7 +7,7 @@ import android.arch.persistence.room.PrimaryKey;
  * Created by Jevin on 01/28/2018.
  */
 
-@Entity
+@Entity(tableName = "login")
 public class Login {
     @PrimaryKey
     private int id;

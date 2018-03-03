@@ -3,6 +3,8 @@
     package="com.jcm.android.genesis">
     
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:allowBackup="true"
@@ -22,9 +24,9 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- Accepts URIs that begin with "http://android.jcm.com/Ochi-Ratha" -->
                 <data
-                    android:scheme="http"
-                    android:host="android.jcm.com/"
-                    android:pathPrefix="/Ochi-Ratha"/>
+                    android:scheme="@string/protocol"
+                    android:host="@string/domain"
+                    android:pathPrefix="@string/sub_directory" />
             </intent-filter>
         </activity>
         <activity android:name=".login.LoginActivity" />

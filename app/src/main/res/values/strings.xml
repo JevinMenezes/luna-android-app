@@ -5,11 +5,15 @@
     <string name="app_name1">Ochi-Ratha</string>
 
     <!-- Strings related to login -->
+    <string name="welcome"><b>Welcome!</b></string>
+    <string name="welcome_text">We hope you enjoy your Ride!</string>
+    <string name="sign_in">Sign in</string>
     <string name="login_email">Email</string>
     <string name="login_password">Password</string>
     <string name="login">Login</string>
     <string name="signup">No account yet? Create one</string>
     <string name="login_activity">Love Riding, here you go vroommmm&#8230;</string>
+    <string name="copyright_text">By signing up you confirm that you have read &amp; agree to our Privacy Policy and Terms &amp; Conditions</string>
     <!---->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -19,7 +23,11 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <!-- Strings related to manifest file-->
+    <string name="protocol">http</string>
+    <string name="domain">android.jcm.com</string>
+    <string name="sub_directory">/Ochi-Ratha</string>
+
 </resources>
